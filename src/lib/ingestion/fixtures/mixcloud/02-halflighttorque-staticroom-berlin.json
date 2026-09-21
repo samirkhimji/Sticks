@@ -1,0 +1,14 @@
+{
+  "_demoNotice": "SANDBOX DEMO FIXTURE — see 01-djrino-floresta-wakinglife2024.json for explanation.",
+  "key": "/demo-halflight-torque/static-room-berlin/",
+  "url": "https://demo.diggr.local/demo-halflight-torque/static-room-berlin/",
+  "name": "Half Light b2b Torque — Static Room Berlin",
+  "slug": "static-room-berlin",
+  "user": { "username": "demo-halflight-torque", "name": "Half Light b2b Torque", "url": "https://demo.diggr.local/demo-halflight-torque/" },
+  "pictures": { "large": "" },
+  "audio_length": 4200,
+  "created_time": "2025-03-02T21:00:00Z",
+  "tags": [{ "name": "club" }, { "name": "deep house" }],
+  "description": "Back to back at Static Room, Berlin. [DEMO FIXTURE]\n\n00:00 Corvid Static - Bone Orchard\n18:40 Palm Grammar - Slow Static\n41:12 O.M.F.O. - Standby\n1:05:00 Kessel Loop - Undertow (Corvid Static Edit)",
+  "sections": []
+}

@@ -1,0 +1,17 @@
+{
+  "_demoNotice": "SANDBOX DEMO FIXTURE — see 01-djrino-floresta-wakinglife2024.json for explanation. This fixture deliberately includes a misspelled artist name ('Corvid Statik') to exercise the review-queue path: similar enough to an existing artist to be flagged, not similar enough to auto-merge.",
+  "key": "/demo-torque/late-night-b2b/",
+  "url": "https://demo.diggr.local/demo-torque/late-night-b2b/",
+  "name": "Late Night B2B",
+  "slug": "late-night-b2b",
+  "user": { "username": "demo-torque", "name": "Torque", "url": "https://demo.diggr.local/demo-torque/" },
+  "pictures": { "large": "" },
+  "audio_length": 3900,
+  "created_time": "2025-09-01T23:00:00Z",
+  "tags": [{ "name": "club" }],
+  "description": "Unplanned back to back, tracklist reconstructed from memory. [DEMO FIXTURE]",
+  "sections": [
+    { "artist": "Corvid Statik", "song": "Bone Orchard", "start_time": 500 },
+    { "artist": "Palm Grammar", "song": "Slow Static", "start_time": 1900 }
+  ]
+}

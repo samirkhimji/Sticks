@@ -1,0 +1,18 @@
+{
+  "_demoNotice": "SANDBOX DEMO FIXTURE — see 01-djrino-floresta-wakinglife2024.json for explanation.",
+  "key": "/demo-induun/night-static-radio-ep12/",
+  "url": "https://demo.diggr.local/demo-induun/night-static-radio-ep12/",
+  "name": "Night Static Radio — Episode 12",
+  "slug": "night-static-radio-ep12",
+  "user": { "username": "demo-induun", "name": "Induun", "url": "https://demo.diggr.local/demo-induun/" },
+  "pictures": { "large": "" },
+  "audio_length": 3600,
+  "created_time": "2025-11-20T10:00:00Z",
+  "tags": [{ "name": "radio" }, { "name": "ambient" }],
+  "description": "Monthly radio show. [DEMO FIXTURE]",
+  "sections": [
+    { "artist": "Our Man From Odessa", "song": "Standby", "start_time": 240 },
+    { "artist": "Marrow Isle", "song": "Tideline", "start_time": 1800 },
+    { "artist": "Nightshade Traverse", "song": "Glass Fields", "start_time": 2900 }
+  ]
+}

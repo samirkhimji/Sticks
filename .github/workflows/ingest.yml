@@ -1,0 +1,20 @@
+name: Scheduled ingestion
+
+# Alternative to Vercel Cron (vercel.json) if you deploy elsewhere, or want
+# a schedule finer than Vercel's Hobby-plan cron limits. Requires two repo
+# secrets: SITE_URL (e.g. https://your-app.vercel.app) and CRON_SECRET
+# (matching the CRON_SECRET env var on the deployed app).
+
+on:
+  schedule:
+    - cron: "17 */4 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger ingestion endpoint
+        run: |
+          curl -sSf -X GET "${{ secrets.SITE_URL }}/api/cron/ingest" \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}"
