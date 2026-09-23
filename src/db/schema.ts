@@ -1,5 +1,5 @@
 // ============================================================================
-// DIGGR — data model (Drizzle ORM / PostgreSQL)
+// STICKS — data model (Drizzle ORM / PostgreSQL)
 //
 // Design principles:
 // - Every fact about "a track playing inside a set" is a first-class row

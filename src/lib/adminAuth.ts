@@ -5,7 +5,7 @@
 import { createHmac, timingSafeEqual } from "crypto";
 import { cookies } from "next/headers";
 
-const COOKIE_NAME = "diggr_admin_session";
+const COOKIE_NAME = "sticks_admin_session";
 const MAX_AGE_SEC = 60 * 60 * 12; // 12 hours
 
 // SECURITY: no fallback secret here on purpose. A hardcoded default would be

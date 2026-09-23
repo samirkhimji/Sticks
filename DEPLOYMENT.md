@@ -1,4 +1,4 @@
-# Deploying Diggr to Vercel + Neon
+# Deploying Sticks to Vercel + Neon
 
 This is the exact, step-by-step path from this codebase to a live URL, using
 the two simplest free-tier services: **Neon** for Postgres and **Vercel**
@@ -30,7 +30,7 @@ Vercel's simplest deploy flow imports a GitHub repo. If this project isn't
 in a repo yet:
 
 ```bash
-cd diggr
+cd sticks
 git init
 git add .
 git commit -m "Initial commit"
@@ -68,7 +68,7 @@ as a static route). If the database isn't migrated yet, **the Vercel build
 will fail**. So run this from your own machine first, pointed at Neon:
 
 ```bash
-cd diggr
+cd sticks
 npm install
 DATABASE_URL="<paste your Neon connection string>" npm run db:migrate
 DATABASE_URL="<paste your Neon connection string>" psql "<paste your Neon connection string>" -f scripts/sql/post-migrate.sql

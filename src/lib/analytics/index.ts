@@ -13,7 +13,7 @@ import { eq, sql, gte } from "drizzle-orm";
 import { db, schema } from "@/db";
 import { normalizeText } from "@/lib/normalize/text";
 
-const VISITOR_COOKIE = "diggr_vid";
+const VISITOR_COOKIE = "sticks_vid";
 
 export async function getOrCreateVisitorId(): Promise<string> {
   const jar = await cookies();

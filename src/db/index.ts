@@ -6,18 +6,18 @@ import * as schema from "./schema";
 // invocations in serverless (module scope is cached per warm lambda).
 declare global {
   // eslint-disable-next-line no-var
-  var __diggrPool: Pool | undefined;
+  var __sticksPool: Pool | undefined;
 }
 
 const pool =
-  global.__diggrPool ??
+  global.__sticksPool ??
   new Pool({
     connectionString: process.env.DATABASE_URL,
     max: process.env.NODE_ENV === "production" ? 5 : 10,
   });
 
 if (process.env.NODE_ENV !== "production") {
-  global.__diggrPool = pool;
+  global.__sticksPool = pool;
 }
 
 export const db = drizzle(pool, { schema });
