@@ -8,7 +8,7 @@ import "./globals.css";
 // design that avoiding an extra external font fetch fits). System fonts
 // (defined in globals.css) look good and load instantly with zero requests.
 
-const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || "Diggr";
+const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || "Sticks";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
 export const metadata: Metadata = {

@@ -100,7 +100,7 @@ ingestion (step 6).
    | `SESSION_SECRET` | output of `openssl rand -hex 32` | run that command locally, paste the result |
    | `CRON_SECRET` | output of `openssl rand -hex 32` | a second, different random value |
    | `NEXT_PUBLIC_SITE_URL` | `https://<your-project>.vercel.app` (or your custom domain) | **must be set before the first build** — see below |
-   | `NEXT_PUBLIC_SITE_NAME` | `Diggr` (or whatever you want shown in the UI) | |
+   | `NEXT_PUBLIC_SITE_NAME` | `Sticks` (or whatever you want shown in the UI) | |
    | `YOUTUBE_API_KEY` | *(optional)* | only if you want the YouTube adapter live; leave blank to skip |
 
    Do **not** add `ENABLE_DEMO_FIXTURES` at all.

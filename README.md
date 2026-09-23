@@ -1,4 +1,4 @@
-# Diggr — find DJ sets by the track inside them
+# Sticks — find DJ sets by the track inside them
 
 A search engine for DJ sets, organized around **track/artist → sets that play it**,
 not the conventional **set → tracklist**. Search a track or artist, get back the

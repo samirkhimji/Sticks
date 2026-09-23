@@ -18,7 +18,7 @@
 // deploy target). Every call is wrapped so failures degrade gracefully.
 
 const MB_BASE = "https://musicbrainz.org/ws/2";
-const USER_AGENT = "Diggr/0.1 (https://example.com; contact: admin@example.com)";
+const USER_AGENT = "Sticks/0.1 (https://example.com; contact: admin@example.com)";
 
 let lastRequestAt = 0;
 async function rateLimit() {
