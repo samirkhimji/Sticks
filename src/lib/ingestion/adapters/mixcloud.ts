@@ -154,7 +154,17 @@ function usernameAndSlugFromUrl(url: string): { username: string; slug: string }
     if (!/mixcloud\.com$/.test(u.hostname.replace(/^www\./, "")) && u.hostname !== "mixcloud.com") return null;
     const parts = u.pathname.split("/").filter(Boolean);
     if (parts.length < 2) return null;
-    return { username: parts[0], slug: parts[1] };
+    // Path segments come back percent-encoded for non-ASCII titles (e.g.
+    // "lux-fr%C3%A1gil-..."). fetchByUrl() re-encodes with
+    // encodeURIComponent() before calling the API, so decode here first —
+    // otherwise a title with an accented/non-ASCII character gets
+    // double-encoded and the API 404s, surfacing as a false "couldn't fetch
+    // metadata" rejection for a perfectly valid, existing cloudcast.
+    try {
+      return { username: decodeURIComponent(parts[0]), slug: decodeURIComponent(parts[1]) };
+    } catch {
+      return { username: parts[0], slug: parts[1] };
+    }
   } catch {
     return null;
   }
