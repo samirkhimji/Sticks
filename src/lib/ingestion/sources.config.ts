@@ -17,6 +17,8 @@ export const WATCHED_MIXCLOUD_USERS: string[] = [
   "NTSRadio", // ~89,751 shows
   "residentadvisor", // ~1,031 shows (RA podcast)
   "Defectedrecords", // ~898 shows (Defected Radio Show)
+  "boomfestivalHQ", // ~127 shows (Boom Festival archive, dormant since ~2014 but real)
+  "SBSR_FM", // Lux Frágil FM episodes (verified via user-submitted URL 2026-09-25)
 ];
 
 export const YOUTUBE_SEARCH_QUERIES: string[] = [
