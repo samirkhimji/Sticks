@@ -9,11 +9,14 @@
 // official API endpoint.
 
 export const WATCHED_MIXCLOUD_USERS: string[] = [
-  // Example, well-known accounts that publish structured tracklists.
+  // Well-known accounts that publish structured tracklists. Verified live
+  // against mixcloud.com on 2026-09-25 — "nts-radio" and "defected" in the
+  // original list were wrong handles (404 / no own uploads) and silently
+  // contributed zero sets every run.
   // Edit freely — the ingestion job re-reads this list on every run.
-  "nts-radio",
-  "residentadvisor",
-  "defected",
+  "NTSRadio", // ~89,751 shows
+  "residentadvisor", // ~1,031 shows (RA podcast)
+  "Defectedrecords", // ~898 shows (Defected Radio Show)
 ];
 
 export const YOUTUBE_SEARCH_QUERIES: string[] = [
